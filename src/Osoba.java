@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Osoba {
     String imie;
     String nazwisko;
@@ -25,7 +27,15 @@ public class Osoba {
     }
 //settery prywatne wlasnosci sa dostepne tylko w tej klasie         metody dostepowe
     public void setImie(String imie) {
-        this.imie = imie;
+        //wpisywanie hasla z klawiatury
+        Scanner scanner = new Scanner(System.in);
+        String haslo = scanner.next();
+
+        if(haslo.equals("1234")) {
+            this.imie = imie;
+        }else {
+            System.out.println("zle haslo");
+        }
     }
 
     public void setNazwisko(String nazwisko) {

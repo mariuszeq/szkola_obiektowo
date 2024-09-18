@@ -11,7 +11,7 @@ public class Main {
         System.out.println(osobaJas.getImie());
         System.out.println(osobaJas.getNazwisko());
         osobaJas.setImie("Jan");
-
+        System.out.println(osobaJas.getImie());
 
     }
 }
