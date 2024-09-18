@@ -13,7 +13,8 @@ public class Osoba {
         this.nazwisko = nazwisko;
         this.wiek = wiek;
     }
-//gettery metody dostepowe
+
+    //gettery metody dostepowe
     public String getImie() {
         return imie;
     }
@@ -45,4 +46,31 @@ public class Osoba {
     public void setWiek(int wiek) {
         this.wiek = wiek;
     }
+
+    //przeciazanie konstruktora
+
+
+    public Osoba(String imie, String nazwisko) {
+        this.imie = imie;
+        this.nazwisko = nazwisko;
+        wiek = 7;
+        //jezeli nie ma lokalnie zmiennej wiek to jest to
+    }
+
+    public Osoba() {
+        imie = "";
+        nazwisko = "";
+        wiek = 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Osoba{" +
+                "imie='" + imie + '\'' +
+                ", nazwisko='" + nazwisko + '\'' +
+                ", wiek=" + wiek +
+                '}';
+    }
+
+
 }
