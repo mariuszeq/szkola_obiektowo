@@ -30,7 +30,10 @@ public class Main {
 
         System.out.println(uczen);
 
-
+        Nauczyciel nauczycielSlowik = new Nauczyciel("Arek", "Slowik", 34, "Polski");
+        System.out.println(nauczycielSlowik);
 
     }
+
+
 }

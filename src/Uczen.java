@@ -17,4 +17,14 @@ public class Uczen extends Osoba{
         liczbaobiektow++;
         nr_ewidencyjny = liczbaobiektow;
     }
+
+    @Override
+    public String toString() {
+        return "Uczen{" +
+                "nr_ewidencyjny=" + nr_ewidencyjny +
+                ", imie='" + getImie()  +
+                ", nazwisko='" + getNazwisko()  +
+                ", wiek=" +  +
+                '}';
+    }
 }
