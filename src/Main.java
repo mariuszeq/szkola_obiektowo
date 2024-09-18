@@ -14,9 +14,6 @@ public class Main {
         System.out.println(osobaJas.getImie());
 
 
-        Osoba osobaAla = new Osoba("Ala", "Fala");
-        System.out.println(osobaJas.getWiek());
-        System.out.println(osobaAla.getWiek());
 
         Osoba osobax = new Osoba();
 
